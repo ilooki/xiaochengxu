@@ -1,0 +1,37 @@
+<!--pages/scenicspot/ss1/ss1.wxml-->
+
+<view class='head'>
+  <view class='head-title'>
+    音你童游
+    </view>
+    <text class='head-text'>{{text}}</text>
+  
+</view>
+
+<!-- <view class='body'>
+  <view class='body-list' wx:for='{{regionlist}}'>
+    <view id='{{item.name}}' class='item' bindtap='getdetail' hover-class='item-hover'>
+  
+      <image class='item-image' src='{{item.src}}' mode='aspectFill'>
+      </image>
+     
+      <text class='item-text'>{{item.cname}}</text>
+    </view>
+  </view>
+</view> -->
+<view class='body'>
+  <swiper class='body-list' indicator-dots="true" autoplay="true" interval="5000"   duration="500" style='height:300px' >
+    <block wx:for="{{regionlist}}">
+      <swiper-item id='{{item.name}}' class='item' bindtap='getdetail'  hover-class='item-hover'>
+        <image class='item-image' src="{{item.src}}" mode='widthFix' height='50vw' width='100%' />
+        <text class='item-text'>{{item.cname}}</text>
+      </swiper-item> 
+    </block>
+  </swiper>
+</view>
+
+<button class='bottom_button' bindtap='saoma'>
+扫码
+</button>
+
+<button class='refresh'>{{size}}</button>

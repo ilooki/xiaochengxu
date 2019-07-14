@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/scenicspot/ss1/ss1",
+    "pages/scenicspot/ss2/ss2",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/scenicspot/ss3/ss3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "音你童游",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "我想获取你的位置"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

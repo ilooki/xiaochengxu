@@ -1,0 +1,47 @@
+<!--pages/scenicspot/ss2/ss2.wxml-->
+
+<view class='head'>
+  <!--image class='head-image' src='{{title_img}}' mode='aspectFill'>
+  </image-->
+
+  <!-- <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}">
+    <swiper-item>
+      <image class='item-image' src='{{title_img}}' mode='aspectFill'>
+      </image>
+    </swiper-item>
+    <block wx:for='{{regionlist}}'>
+      <swiper-item>
+        <image class='item-image' src='{{item.src}}' mode='aspectFill'>
+        </image>
+      </swiper-item>
+    </block>
+  </swiper> -->
+ <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}">
+ <swiper-item>
+      <image class='item-image' src='{{title_img}}' mode='aspectFill'>
+      </image>
+   </swiper-item>
+    <block wx:for='{{regionlist}}'>
+     <swiper-item>
+        <image width="100%"  class='item-image' src='{{item.src}}' mode='aspectFill'>
+        </image>
+    </swiper-item>
+    </block>
+</swiper>
+  <view class='head-title'>
+    {{title}}
+  </view>
+</view>
+
+<view class='body'>
+  <scroll-view scroll-y class='body-list'>
+    <view id='{{item.name}}' class='item' bindtap='getdetail' hover-class='item-hover' wx:for='{{regionlist}}'>
+      <!--image class='item-image' src='{{item.src}}' mode='aspectFill'>
+      </image-->
+      <text class='item-text' hover-class='item-hover'>{{item.cname}}</text>
+    </view>
+  </scroll-view>
+
+  <!-- <image class='body-map' src='{{map}}' mode='aspectFit'>
+  </image> -->
+</view>

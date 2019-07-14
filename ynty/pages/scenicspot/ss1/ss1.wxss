@@ -1,0 +1,84 @@
+/* pages/scenicspot/ss1/ss1.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  margin-left: 10%;
+  width: 100%;
+  /* padding-top: 10%; */
+  padding-bottom: 5%;
+}
+
+.head-title {
+  font-size: 50px;
+  font-weight: bold;
+  color:darkgreen;
+  padding-bottom: 2%;
+}
+
+.head-text{
+  font-weight: lighter;
+  color: green;
+}
+
+.body {
+  width: 100%;
+  /* margin-bottom: 20%; */
+  
+}
+
+.body-list {
+   /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30rpx;  */
+margin-left: 3vw;
+margin-right: 3vw;
+}
+
+.item {
+  margin-bottom: 30rpx;
+  position: absolute;
+}
+
+.item-hover {
+  opacity: 0.9;
+  transform: scale(0.99, 0.99);
+}
+
+.item-image {
+  
+  height: 20vh;
+  width: 100%;
+}
+
+.item-text {
+  position: absolute;
+  top: 87%;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  font-family: KaiTi;
+  font-weight: normal;
+  color:darkgreen;
+  font-size: large;
+}
+
+.bottom_button{
+  position: fixed;
+  bottom: 2%;
+  left: 10%;
+  width: 80%;
+}
+
+.refresh{
+    position: fixed;
+  bottom: 5rpx;
+  right: 5rpx;
+  height: 50rpx;
+  width: 50rpx;
+  font-size: x-small;
+}

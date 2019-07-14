@@ -1,0 +1,31 @@
+<!--pages/scenicspot/ss3/ss3.wxml-->
+
+<view class='head' bindtap='translate'>
+  <image class='head-image' src='{{title.src}}' mode='aspectFill'>
+  </image>
+  <view class='head-title'>
+    {{title.name}}
+  </view>
+</view>
+
+<view class='body'>
+  <view class='body-list'>
+    <view class='language-list'>
+      <view id='chinese' class='{{languagestyle[0]}}' hover-class='language-item-hover' bindtap='changelanguage'>
+        中文
+      </view>
+      <view id='english' class='{{languagestyle[1]}}' hover-class='language-item-hover' bindtap='changelanguage'>
+        English
+      </view>
+      <view id='japanese' class='{{languagestyle[2]}}' hover-class='language-item-hover' bindtap='changelanguage'>
+        日本語
+      </view>
+    </view>
+  </view>
+
+  <view class='body-context'>
+    {{content}}
+  </view>
+</view>
+
+<cover-image bindtap='audiocontrol' animation='{{animation}}' hover-class='audio-control-hover' class='audio-control' src='{{src}}'></cover-image>

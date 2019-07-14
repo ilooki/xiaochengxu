@@ -1,0 +1,101 @@
+/* pages/scenicspot/ss2/ss2.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  width: 100%;
+   position: relative; 
+    padding-bottom: 2%;
+}
+
+.head-image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.head-title {
+  position: absolute;
+  top: 95%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: min-content; 
+  text-align: center;
+  font-family: KaiTi;
+  /* font-size: x-large; */
+  color: black;
+  /* border-radius: 10px;
+  border-color: brown;
+  border-width: 25px;
+  border-style: solid; */
+} 
+
+ .body {
+  /* display: flex;
+  flex-direction: row;  */
+  display: flex;
+ 
+  width: 100%;
+   height: max-content; 
+  /* height: 50%; */
+   padding-bottom: 10%;
+}
+
+.body-list {
+  padding: 30rpx;
+   width: min-content; 
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+ 
+  height: 100rpx;
+  width: 700rpx;  
+  
+   border-radius: 10rpx;
+  border-color: black;
+  border-width: 2rpx;
+  border-style: solid;
+
+   /* display: flex;
+  flex-direction: column;
+  align-items: center;  */
+}
+
+.item-hover {
+  opacity: 0.9;
+  transform: scale(0.99, 0.99);
+}
+
+.item-image {
+  width: 100%;
+}
+
+.item-text {
+  font-size: small;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-map {
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+  height: 700rpx;
+}
+
+.swiper{
+  height: 600rpx;
+  width: 400rpx;
+}
